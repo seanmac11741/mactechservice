@@ -2407,6 +2407,15 @@ var name4 = "@firebase/analytics";
 var version3 = "0.10.1";
 registerAnalytics();
 // src/app.js
+var carousel = function() {
+  var slides = document.getElementsByClassName("mySlides");
+  for (var i = 0;i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  myIndex = myIndex % slides.length + 1;
+  slides[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 3000);
+};
 var firebaseConfig = {
   apiKey: "AIzaSyBhqerwrNoUD78rEPcARV3ToCoFPtpWRIQ",
   authDomain: "mactechservice-2c9a1.firebaseapp.com",
@@ -2420,3 +2429,5 @@ var app6 = initializeApp(firebaseConfig);
 var analytics3 = getAnalytics(app6);
 console.log("app.js running...");
 console.log(analytics3);
+var myIndex = 0;
+carousel();

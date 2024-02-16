@@ -22,3 +22,20 @@ const analytics = getAnalytics(app);
 
 console.log('app.js running...');
 console.log(analytics);
+
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var slides = document.getElementsByClassName("mySlides");
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    myIndex = (myIndex % slides.length) + 1;
+    slides[myIndex - 1].style.display = "block";
+
+    setTimeout(carousel, 3000);
+}
