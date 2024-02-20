@@ -53,3 +53,12 @@ section {
     object-fit: cover;
     /* Maintain aspect ratio and cover the container */
 }
+
+.profileImg {
+    border-radius: 50%;
+    max-width: 60px;
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+
+}

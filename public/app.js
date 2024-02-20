@@ -1523,7 +1523,7 @@ var broadcastFidChange = function(key, fid) {
   closeBroadcastChannel();
 };
 var getBroadcastChannel = function() {
-  if (!broadcastChannel && ("BroadcastChannel" in self)) {
+  if (!broadcastChannel && "BroadcastChannel" in self) {
     broadcastChannel = new BroadcastChannel("[Firebase] FID Change");
     broadcastChannel.onmessage = (e) => {
       callFidChangeCallbacks(e.data.key, e.data.fid);

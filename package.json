@@ -1,8 +1,8 @@
 {
-    "scripts": {
-        "build": "bun build -o public/app.js"
-    },
-    "dependencies": {
-        "firebase": "^10.8.0"
-    }
+  "scripts": {
+    "build": "bun build -o public/app.js"
+  },
+  "dependencies": {
+    "firebase": "^10.8.0"
+  }
 }
