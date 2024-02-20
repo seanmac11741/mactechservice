@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
@@ -9,6 +10,8 @@ header {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
@@ -21,10 +24,10 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #101010;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 10px;
 }
 
 .social-links {
@@ -61,4 +64,44 @@ section {
     margin-left: 5%;
     margin-right: auto;
 
+}
+
+.motto {
+    padding: 3%;
+}
+
+.motto p {
+    color: #333;
+}
+
+#contact-container {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    margin: 0;
+    color: #ffffffa1;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
 }
