@@ -20,3 +20,5 @@ Todos:
 [x] - pretty css for buttons, that hover and change slightly 
 [ ] - polaroid slideshow with descriptions https://www.w3schools.com/css/css3_images.asp 
 [ ] - slideshow of google reviews (dynamic?)
+[ ] - Make reviews animate in using this vid: https://www.youtube.com/watch?v=T33NN_pPeNI 
+[x] - Add paralax scrolling with mountains and trees like this: https://www.youtube.com/watch?v=mxHoPYFsTuk 

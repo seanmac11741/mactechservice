@@ -2414,7 +2414,7 @@ var carousel = function() {
   }
   myIndex = myIndex % slides.length + 1;
   slides[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 3000);
+  setTimeout(carousel, 4000);
 };
 var firebaseConfig = {
   apiKey: "AIzaSyBhqerwrNoUD78rEPcARV3ToCoFPtpWRIQ",
