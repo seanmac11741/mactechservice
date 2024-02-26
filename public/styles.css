@@ -21,6 +21,7 @@ header {
     height: 90vh;
     transform-style: preserve-3d;
     z-index: -1;
+    margin: -5px;
 }
 
 .background {
@@ -137,5 +138,6 @@ footer {
 }
 
 .embedMap {
-    width: 90vw;
+    width: 100%;
+    border: 0;
 }
