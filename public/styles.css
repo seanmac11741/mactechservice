@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
 }
 
 
@@ -18,7 +19,7 @@ header {
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     transform-style: preserve-3d;
     z-index: -1;
     margin: -5px;
@@ -57,9 +58,27 @@ header {
 
 section {
     font-size: 2rem;
-    padding: 1em;
+    padding: 0.5em;
     background-color: #333;
     color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 footer {
@@ -100,6 +119,35 @@ footer {
     margin-left: 5%;
     margin-right: auto;
 
+}
+
+/* Gallery of polaroids */
+.gallery {
+    display: flex;
+}
+
+.polaroidImg {
+    float: left;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+/* change the polaroid image stuff to be responsive  */
+div.polaroid {
+    font-size: 1.5rem;
+    width: 80%;
+    height: 80%;
+    background-color: #333;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+div.container {
+    text-align: left;
+    /* padding: 10px 20px; */
 }
 
 .motto {

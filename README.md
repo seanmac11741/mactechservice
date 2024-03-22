@@ -23,6 +23,11 @@ firebase deploy
 
 ```
 
+## Deploy a preview version for a week to send to client
+```
+firebase hosting:channel:deploy preview_1
+```
+
 Todos: 
 - [x] - Profile picture added
 - [x] - Call/email/buttons that will link correctly 
