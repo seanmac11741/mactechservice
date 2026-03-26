@@ -12,8 +12,7 @@ Website for tech business in Brush, CO
 
 ## To run in dev with bun: 
 ```
-bun build src/app.js --outdir ./public --watch
-#then spool up the ./public/index.html file with LiveServer
+bun run dev
 ```
 ## Deploy to firebase: 
 ```

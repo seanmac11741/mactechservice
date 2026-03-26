@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "bun dev.js",
     "build": "bun build -o public/app.js"
   },
   "dependencies": {
